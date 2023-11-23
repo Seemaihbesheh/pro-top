@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            flex-direction: row;
+            /* Keep items from left to right */
+        }
+
+        .coures-card {
+            width: 300px;
+            margin: 10px;
+            background-color: rgb(196, 0, 0);
+            margin-right: 15px;
+        }
+
+        .coures-card img {
+            width: 100%;
+            height: 150px;
+         
+        }
+
+        .card-content {
+            padding-left: 15px;
+        }
+
+        .card-description {
+            color: #555;
+            font-size: 17px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-content h2 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card-author {
+            font-style: italic;
+            color: #888;
+        }
+
+        .star-rating {
+            display: flex;
+            align-items: center;
+            color: #FFD700;
+            /* Set star color to gold */
+        }
+
+        .star {
+            margin-right: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="coures-card">
+        <img src="accessibility.png" alt="Image 1">
+        <div class="card-content">
+            <p class="card-description">Web Development Concepts and  Technology</p>
+            <h2 >Title 2</h2>
+
+            <div class="star-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="card-author">Author 2</p>
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

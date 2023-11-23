@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+
+:root {
+    --blue-color: #0768AC;
+    --green-color: #03C180;
+    --white-color: #FFFFFF;
+    --gray-color: #282828;
+    --black-color: #1A1A1A;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans';
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+
+}
+
+.header{
+    display: flex;
+    width: 99%;
+    min-height: 60px;
+    background-color: var(--black-color);
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+ 
+}
+
+.header label {
+    order: 1;
+    margin-right: auto;
+    padding-left: 2%;
+   color: var(--blue-color);
+   font-weight: 700;
+}
+
+.header button {
+    order: 2;  
+    display: flex; /* Use flex display to enable flex properties */
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 130px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    font-weight: 400;   
+   /* Add margin to create space between icon and text */
+ 
+}
+
+.header button ion-icon {
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.mode-option {
+    margin-right: 10px;
+
+}
+.fav-option {
+    margin-right: 71px;
+}
+
+.mode-option ion-icon {
+    margin-right: 1px;
+  
+    /* Adjust the spacing between icon and text */
+}
+
+
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--black-color);
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.mixed-colors {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.left-mixed-colors,
+.right-mixed-colors {
+    position: absolute;
+    height: 100%;
+}
+
+.left-mixed-colors {
+    left: 0;
+    width: 90%;
+    background-image: linear-gradient(to right, var(--blue-color), var(--green-color));
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.right-mixed-colors {
+    right: 0;
+    width: 50%;
+    background-color: var(--green-color);
+    clip-path: polygon(74% 0, 100% 0%, 100% 100%, 8% 40%);
+}
+
+
+.welcome-text {
+    margin-top: -22px; /* Adjust this value to control the height of the welcome text */
+    padding-left: 65px;
+}
+
+.welcome-text h2 {
+    color: var(--green-color);
+    font-weight: 700;
+}
+
+.welcome-text label {
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+
+
+
+
+.content {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: var(--gray-color);
+}
+
+ .search {
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 10%;
+    margin-bottom: 15px;
+    width: 93%;
+   
+
+}
+
+.search ion-icon {
+    position: absolute;
+    left: 10px;
+    color: var(--white-color);
+    pointer-events: none;
+    /* Make sure the icon doesn't interfere with the input */
+}
+
+.search input {
+    padding: 10px 40px;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid var(--gray-color);
+    border-right: none; /* Remove border on the right side */
+    font-weight:400 ;
+    background-color: var(--black-color);
+  
+}
+
+
+/* Add this style to your existing CSS */
+
+.dropdown-container {
+    display: flex;
+    background-color: var(--black-color);
+    height: 50px;
+    width: 400px;
+    
+    
+  
+}
+
+.dropdown-container  div {
+    flex-direction: column; 
+    width: 250px;
+    padding-top: 2px;
+    border: 1px solid black;
+
+    background-color: var(--black-color);
+    
+
+}
+
+.dropdown-label {
+    padding-left: 14px;  
+    margin-top: 5px;  
+    color: var(--white-color);
+    
+}
+
+.dropdown-btn {
+    width: 100%;
+    text-align: left;
+    height: 9x; 
+    border: none;
+    padding-left: 10px;
+     font-weight: 400;
+     color: var(--white-color);
+     background-color: var(--black-color);
+  
+  
+}
+.search-res{
+    font-size: large;
+    font-weight: 700;
+    margin-left: 50px;
+    color: var(--white-color);
+   
+}
+
+
+
+  
+
+.content .courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 39px;
+    padding-right: 17px;
+    flex-direction: row;
+    background-color: var(--gray-color);
+}
+
+.coures-card {
+    width: 293px;
+    height: 295px;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: var(--black-color);
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 10px; /* You can adjust the value to change the border radius */
+    box-shadow: 0 1px 2px var(--gray-color); /* Add this line for box shadow */
+
+    
+  
+ 
+}
+
+.coures-card img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ 
+}
+
+
+
+
+
+.card-content {
+  
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+.card-description {
+    padding-top: 13px;
+    color: var(--white-color);  
+      font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+
+
+
+
+
+.card-content h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--white-color);
+   
+}
+
+.card-author {
+   
+    color: var(--white-color);
+    margin-bottom: 2px;
+    padding-top: 10px;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    color: orange;
+    padding-top: 10px;
+    /* Set star color to gold */
+}
+
+.star-rating ion-icon {
+    margin-right: 3px;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--gray-color);
+   
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer p  ion-icon {
+    color: red;
+   
+}
+
+.sticky-container {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--black-color);
+    padding: 3px;
+    text-align: left;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 180px;
+
+  }
+
+  .sticky-container h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-right: 18px;
+    margin-left: 13px;
+    margin-top: 6px;
+    font-size: 20px;
+    color: var(--white-color);
+
+  }
+
+
+  
+  .sticky-cards {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black-color);  
+  
+  
+  }
+
+  .sticky-content {
+    width: 170px;
+    height: 150px;
+    background-color: var(--black-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 2px var(--black-color); /* Add this line for box shadow */
+}
+  .sticky-img {
+    width: 170px;
+    height: 90px;
+    margin-right: 10px;
+    border-radius: 10px 10px 0 0;
+    /* Adjust the value as needed */
+    overflow: hidden;
+    /* Ensure the rounded corner is visible */
+  }
+
+  .sticky-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sticky-content h3 {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 7px;
+    text-align: left;
+    color:var(--white-color);
+  }
+
+

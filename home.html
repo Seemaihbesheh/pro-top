@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <header class="header">
+            <label >Web Topics</label>
+
+            <button class="mode-option">
+                <ion-icon name="moon-outline"></ion-icon>
+                Dark Mode
+            </button>
+
+            <button class="fav-option" onclick="showFav()">
+                <ion-icon name="heart-outline"></ion-icon>
+                Favourites
+            </button>
+
+        </header>
+
+
+        <div class="welcome">
+            <div class="mixed-colors">
+                <div class="left-mixed-colors"></div>
+                <div class="right-mixed-colors"></div>
+            </div>
+            <div class="welcome-text">
+                <h2 >Welcome to our website!</h2>
+                <label >We have a new design that's fresh, modern, and easy to use</label>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div>
+
+                <div class="search">
+
+                    <ion-icon  name="search-outline"></ion-icon>
+
+                    <input type="text"  placeholder="Search the website...">
+
+                    <div class="dropdown-container">
+                        <div>
+                            <label class="dropdown-label">Sort by:</label>
+                            <select class="dropdown-btn" name="sort-options">
+                                <option value="option1">Default</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div >
+                            <label class="dropdown-label">Filter by:</label>
+                            <select class="dropdown-btn" name="filter-options">
+                                <option value="option1">Default</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <label class="search-res">"24" Web Topics Found</label>
+
+
+
+
+                <div class="courses">
+
+
+                    <div class="coures-card">
+                    
+                        <img src=" images/html.png" alt="">
+                        <div class="card-content">
+                            <p class="card-description">Web Development Languages</p>
+                            <h2>HTML</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+
+                            <p class="card-author">Author: Sarah Smith</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="coures-card">
+                        <img src="images/css.webp" alt="">
+                        <div class="card-content">
+                            <p class="card-description">Web Development Languages</p>
+                            <h2>CSS</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: David Lee</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="coures-card">
+                        <img src="images/javascript.jpg" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Web Development Languages</p>
+                            <h2>JavaScript</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Emily Chen</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/jquery.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Frontend Frameworks and Libraries</p>
+                            <h2>JQuery</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: John Doe</p>
+                        </div>
+                    </div>
+
+
+                    <div class="coures-card">
+                        <img src="images/angular.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Frontend Frameworks and Libraries</p>
+                            <h2>Angular</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+
+                                <ion-icon name="star-half"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="coures-card">
+                        <img src="images/react.webp" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Frontend Frameworks and Libraries</p>
+                            <h2>React</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: John Doe</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/vuejs.jpeg" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Frontend Frameworks and Libraries</p>
+                            <h2>Vue.js</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>                            </div>
+                            <p class="card-author">Author: John Do</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/nodejs.webp" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Node.js</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: John Doe</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/expressjs.webp" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Expressjs</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Sophia Rodriguez</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/ruby.jpeg" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Ruby on Rails</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/django.jpeg" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Django</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/flask.webp" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Flask</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/sql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Databases and APIs</p>
+                            <h2>SQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/nosql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Databases and APIs</p>
+                            <h2>NoSQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/restapi.jpeg" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Databases and APIs</p>
+                            <h2>REST APIs</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/graphql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Databases and APIs</p>
+                            <h2>GraphQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/graphql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Web Development Concepts and Technology</p>
+                            <h2>GraphQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/graphql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Web Development Concepts and Technology</p>
+                            <h2>GraphQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/graphql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Web Development Concepts and Technology</p>
+                            <h2>GraphQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/django.jpeg" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Django</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+                    <div class="coures-card">
+                        <img src="images/flask.webp" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Backend Frameworks and Libraries</p>
+                            <h2>Flask</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/sql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Databases and APIs</p>
+                            <h2>SQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    <div class="coures-card">
+                        <img src="images/nosql.png" alt="Image 1">
+                        <div class="card-content">
+                            <p class="card-description">Databases and APIs</p>
+                            <h2>NoSQL</h2>
+
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                            <p class="card-author">Author: Jesica Dacvis</p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p >Developed with <ion-icon name="heart"></ion-icon> © 2023</p>
+            </footer>
+
+        </div>
+
+
+
+
+        
+        <div id="sticky" class="sticky-container">
+
+            <h1 >My Favourite Topics</h1>
+
+            <div class="sticky-cards">
+
+                <div class="sticky-content">
+
+                    <div class="sticky-img">                        <img src="images/react.webp" alt="Photo 2">
+                    </div>
+
+                    <h3 > React</title>
+                        <div class="rating" data-rating="0">
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="sticky-content">
+                    <div class="sticky-img">
+                        <img src="images/cloud.jpeg" alt="Photo 2">
+                    </div>
+                    <h3 >Cloud Computing</title>
+                        <div class="rating" data-rating="0">
+                            <div class="star-rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <script>
+        
+            function showFav() {
+                var div = document.getElementById("sticky");
+                div.style.display = (div.style.display === "flex") ? "none" : "flex";
+
+            }
+        </script>
+
+
+
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
